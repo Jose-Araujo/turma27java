@@ -24,8 +24,10 @@ programa
 		leia(coeficienteF)
 
 		valorX = (coeficienteC*coeficienteE - coeficienteB*coeficienteF)/(coeficienteA*coeficienteE - coeficienteB*coeficienteD)
-		valorX = (coeficienteA*coeficienteF - coeficienteC*coeficienteD)/(coeficienteA*coeficienteE - coeficienteB*coeficienteD)
-		
+		valorY = (coeficienteA*coeficienteF - coeficienteC*coeficienteD)/(coeficienteA*coeficienteE - coeficienteB*coeficienteD)
+
+		escreva("O valor de X é ", valorX, ".\n")
+		escreva("O valor de Y é ", valorY, ".\n")
 		
 	}
 }
@@ -34,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 158; 
+ * @POSICAO-CURSOR = 665; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
