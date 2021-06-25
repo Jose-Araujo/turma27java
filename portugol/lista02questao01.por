@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica --> mat
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -14,7 +14,8 @@ programa
 		da multa que João deverá pagar. Caso contrário mostrar tais variáveis com o conteúdo
 		ZERO.*/
 
-		real pesoDeTomateEstabelecido = 50.0, multaPorQuiloExcedente = 4.0, pesoDeTomate = 0.0, excedenteDeTomate = 0.0, valorDaMultaPorExcedente = 0.0
+		const real PESODETOMETEESTABELECIDO = 50.0, MULTAPORQUILOEXCEDENTE = 4.0
+		real pesoDeTomate = 0.0, excedenteDeTomate = 0.0, valorDaMultaPorExcedente = 0.0
 		cadeia nomeDoUsuario
 		
 		escreva("Informe o nome do usuário: ")
@@ -23,9 +24,9 @@ programa
 		leia(pesoDeTomate)
 		limpa()
 		
-		se(pesoDeTomate > pesoDeTomateEstabelecido){
-			excedenteDeTomate = mat.arredondar(pesoDeTomate - pesoDeTomateEstabelecido, 2)
-			valorDaMultaPorExcedente = mat.arredondar(multaPorQuiloExcedente*excedenteDeTomate, 2)
+		se(pesoDeTomate > PESODETOMETEESTABELECIDO){
+			excedenteDeTomate = mat.arredondar(pesoDeTomate - PESODETOMETEESTABELECIDO, 2)
+			valorDaMultaPorExcedente = mat.arredondar(MULTAPORQUILOEXCEDENTE*excedenteDeTomate, 2)
 
 			escreva("Olá ", nomeDoUsuario, ", você possui ", pesoDeTomate, " kg de tomate, e possui um excedente de ", excedenteDeTomate, 
 			" kg. Terá que pagar uma multa no valor de R$ ", valorDaMultaPorExcedente, ".\n" )
@@ -42,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 886; 
+ * @POSICAO-CURSOR = 1167; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
