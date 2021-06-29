@@ -8,10 +8,10 @@ programa
 		/*Desenvolver um sistema que efetue a soma de todos os números ímpares que são
 		múltiplos de três e que se encontram no conjunt dos números de 1 até 500.*/
 
-		const inteiro CONJUNTODOSNIMEROS = 500
+		const inteiro CONJUNTODOSNUMEROS = 500
 		inteiro somaNumeroImparMultiplo3 = 0
 
-		para(inteiro inicioDoConjuntoDosNumeros = 1; inicioDoConjuntoDosNumeros <= CONJUNTODOSNIMEROS; inicioDoConjuntoDosNumeros++){
+		para(inteiro inicioDoConjuntoDosNumeros = 1; inicioDoConjuntoDosNumeros <= CONJUNTODOSNUMEROS; inicioDoConjuntoDosNumeros++){
 			se(inicioDoConjuntoDosNumeros%2 == 1 e inicioDoConjuntoDosNumeros%3 == 0){
 				somaNumeroImparMultiplo3 += inicioDoConjuntoDosNumeros
 			}
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 273; 
+ * @POSICAO-CURSOR = 409; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
