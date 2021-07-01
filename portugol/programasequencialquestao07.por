@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> Mat
 	funcao inicio()
 	{
 		//PROGRAMA SEQUENCIAL
@@ -12,25 +12,25 @@ programa
 
 		real coeficienteA, coeficienteB, coeficienteC, coeficienteD, coeficienteE, coeficienteF, valorX, valorY
 
-		escreva("Digite os coeficientes!")
-		escreva("\nCoeficente A: ")
+		escreva("Digite os coeficientes!\n")
+		escreva("Coeficente A: ")
 		leia(coeficienteA)
-		escreva("\nCoeficente B: ")
+		escreva("Coeficente B: ")
 		leia(coeficienteB)
-		escreva("\nCoeficente C: ")
+		escreva("Coeficente C: ")
 		leia(coeficienteC)
-		escreva("\nCoeficente D: ")
+		escreva("Coeficente D: ")
 		leia(coeficienteD)
-		escreva("\nCoeficente E: ")
+		escreva("Coeficente E: ")
 		leia(coeficienteE)
-		escreva("\nCoeficente F: ")
+		escreva("Coeficente F: ")
 		leia(coeficienteF)
 
 		valorX = (coeficienteC*coeficienteE - coeficienteB*coeficienteF)/(coeficienteA*coeficienteE - coeficienteB*coeficienteD)
 		valorY = (coeficienteA*coeficienteF - coeficienteC*coeficienteD)/(coeficienteA*coeficienteE - coeficienteB*coeficienteD)
 
-		escreva("O valor de X é ", valorX, ".\n")
-		escreva("O valor de Y é ", valorY, ".\n")
+		escreva("O valor de X é ", Mat.arredondar(valorX, 2), ".\n")
+		escreva("O valor de Y é ", Mat.arredondar(valorY, 2), ".\n")
 		
 	}
 }
@@ -39,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 821; 
+ * @POSICAO-CURSOR = 1090; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

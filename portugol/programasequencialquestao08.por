@@ -1,6 +1,6 @@
 programa
 {
-	
+
 	funcao inicio()
 	{
 		//PROGRAMA SEQUENCIAL
@@ -18,6 +18,7 @@ programa
 		custoConsumidor = custoFabrica + 0.28*custoFabrica + 0.45*custoFabrica 
 
 		escreva("O custo do Consumidor é ", custoConsumidor)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 619; 
+ * @POSICAO-CURSOR = 641; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

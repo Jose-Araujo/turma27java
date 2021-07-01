@@ -9,11 +9,11 @@ programa
 		//Considerar que a média é ponderada e que o peso das notas é: 2,3 e 5, respectivamente.
 		real nota01Aluno, nota02Aluno, nota03Aluno, mediaPonderada
 		escreva("Escreva as notas do aluno!")
-		escreva("\nNota 01: ")
+		escreva("Nota 01: ")
 		leia(nota01Aluno)
-		escreva("\nNota 02: ")
+		escreva("Nota 02: ")
 		leia(nota02Aluno)
-		escreva("\nNota 03: ")
+		escreva("Nota 03: ")
 		leia(nota03Aluno)
 
 		mediaPonderada = (2*nota01Aluno + 3*nota02Aluno + 5*nota03Aluno)/10
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 557; 
+ * @POSICAO-CURSOR = 366; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

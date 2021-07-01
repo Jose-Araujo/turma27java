@@ -11,9 +11,9 @@ programa
 		escreva("Digite a idade do usuário em dias: ")
 		leia(idadeDoUsuarioDias)
 		
-		idadeUsuarioAnos = idadeDoUsuarioDias/360
-		idadeUsuarioMeses = (idadeDoUsuarioDias%360)/30
-		idadeUsuarioDias = (idadeDoUsuarioDias%360)%30
+		idadeUsuarioAnos = idadeDoUsuarioDias/365
+		idadeUsuarioMeses = (idadeDoUsuarioDias%365)/30
+		idadeUsuarioDias = (idadeDoUsuarioDias%365)%30
 
 		escreva("\nA idade do usuário em anos, meses e dias é:")
 		escreva("\n	Anos: ", idadeUsuarioAnos)
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 651; 
+ * @POSICAO-CURSOR = 486; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
