@@ -10,18 +10,24 @@ programa
 		1+2+3+4+5+6+7=28.*/
 
 		inteiro numeroDoTeclado
-		inteiro contaAteoNumeroTeclado = 0, somaDosNumeros = 0
+		inteiro contaAteoNumeroTeclado = 1, somaDosNumeros = 0
 
 		escreva("Digite um número no Teclado: ")
 		leia(numeroDoTeclado)
 
 		faca{
 			somaDosNumeros += contaAteoNumeroTeclado
+			escreva("", contaAteoNumeroTeclado)
 			contaAteoNumeroTeclado++
+			
+			se(contaAteoNumeroTeclado <= numeroDoTeclado){
+				escreva(" + ")
+			}
+			
 			
 		}enquanto(contaAteoNumeroTeclado <= numeroDoTeclado)
 
-		escreva("A soma de todos os números de 2 até o valor digitado no teclado é ", somaDosNumeros, ".\n")
+		escreva(" = ", somaDosNumeros, ".\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 637; 
+ * @POSICAO-CURSOR = 700; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
