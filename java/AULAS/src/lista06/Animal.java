@@ -1,17 +1,17 @@
 package lista06;
 
-public class Animal {
+public abstract class Animal {
 	
 	private String nome;
 	private int idade;
-	
 	private boolean emitirSom;
 	
+	
 	public Animal(String nome, int idade, boolean emitirSom) {
+		super();
 		this.nome = nome;
 		this.idade = idade;
 		this.emitirSom = emitirSom;
-		
 	}
 
 	public String getNome() {

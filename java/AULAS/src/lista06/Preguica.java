@@ -16,6 +16,7 @@ public class Preguica extends Animal{
 		this.subirArvore = subirArvore;
 	}
 	
+	@Override
 	public void emitirSom() {
 		System.out.println("Preguica emitindo som...");
 		

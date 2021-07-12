@@ -4,12 +4,13 @@ public class ProgramaAnimal {
 
 	public static void main(String[] args) {
 		
-		Som somanimal = new Som();
+		Cachorro cachorro = new Cachorro("Doguinho", 3, true, true);
+		Cavalo cavalo = new Cavalo("Cavalinho", 6, true, true); 
+		Preguica preguica = new Preguica("Preguicinha", 19, true, true);
 		
-		somanimal.fazeranimalEmitirSom(new Animal(null, 0, false));
-		somanimal.fazeranimalEmitirSom(new Cachorro(null, 0, false, false));
-		somanimal.fazeranimalEmitirSom(new Cavalo(null, 0, false, false));
-		somanimal.fazeranimalEmitirSom(new Preguica(null, 0, false, false));
+		cachorro.emitirSom();
+		cavalo.emitirSom();
+		preguica.emitirSom();
 
 	}
 

@@ -16,6 +16,7 @@ public class Cavalo extends Animal{
 		this.correr = correr;
 	}
 	
+	@Override
 	public void emitirSom() {
 		System.out.println("Cavalo emitindo som...");
 		
