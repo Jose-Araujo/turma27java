@@ -14,14 +14,14 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "postagem")
-public class PostagemModel {
+public class Postagem {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
-	@Size(min = 5, max = 100)
+	@NotNull(message = "O campo não pode ser nulho nem vazio")
+	@Size(min = 5, max = 100, message = "Tamanho minimo (2) e maximo (100) de caracteres.")
 	private String titulo;
 	
 	@NotNull
@@ -29,33 +29,38 @@ public class PostagemModel {
 	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date date = new java.sql.Date(System.currentTimeMillis());
-	
+	private Date data = new java.sql.Date(System.currentTimeMillis());
+
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
+
 	public String getTitulo() {
 		return titulo;
 	}
+
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+
 	public String getTexto() {
 		return texto;
 	}
+
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-	public Date getDate() {
-		return date;
+
+	public Date getData() {
+		return data;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+
+	public void setData(Date data) {
+		this.data = data;
 	}
-	
-	
 	
 }
