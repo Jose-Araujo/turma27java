@@ -17,16 +17,16 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name = "tb_tema")
 public class Tema {
 
-	@Id
+	@Id	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
+	@NotNull(message = "O atributo descrição é obrigatório")
 	private String descricao;
 	
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
-	private List<Postagem>postagem;
+	private List<Postagem> postagem;
 
 	public long getId() {
 		return id;
